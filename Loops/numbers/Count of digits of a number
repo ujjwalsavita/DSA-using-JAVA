@@ -1,0 +1,97 @@
+***************************************** JAVA ****************************************
+class Solution {
+    public int countDigits(int n) {
+        // int c= 0;
+        
+        // while(n > 0){
+        //     c++;
+        //     n = n /10;
+        // }
+        
+        // return c;
+        
+        int count = (int)Math.floor(Math.log10(n)) + 1;
+        
+        return count;
+    }
+}
+
+
+***************************************** C *******************************************
+#include <stdio.h>
+#include <math.h>
+
+int countDigits(int n) {
+
+    // int c = 0;
+
+    // while(n > 0){
+    //     c++;
+    //     n = n / 10;
+    // }
+
+    // return c;
+
+    int count = (int)floor(log10(n)) + 1;
+
+    return count;
+}
+
+int main() {
+    int n = 12345;
+    printf("Digits = %d", countDigits(n));
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int countDigits(int n) {
+
+    // int c = 0;
+
+    // while(n > 0){
+    //     c++;
+    //     n = n / 10;
+    // }
+
+    // return c;
+
+    int count = floor(log10(n)) + 1;
+
+    return count;
+}
+
+int main() {
+    int n = 12345;
+    cout << "Digits = " << countDigits(n);
+
+    return 0;
+}
+
+
+
+
+***************************************** Python **************************************
+import math
+
+def countDigits(n):
+
+    # c = 0
+    #
+    # while n > 0:
+    #     c += 1
+    #     n = n // 10
+    #
+    # return c
+
+    count = math.floor(math.log10(n)) + 1
+
+    return count
+
+
+n = 12345
+print("Digits =", countDigits(n))
