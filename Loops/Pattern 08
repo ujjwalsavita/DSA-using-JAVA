@@ -1,0 +1,90 @@
+***************************************** JAVA ****************************************
+public class pattern08 {
+    public static void main(String[] args) {
+        int n = 10;
+
+        for(int i = 1 ; i <= n ;i++){
+
+            //space
+            for(int j = 1; j <= i-1 ;j++){
+                System.out.print("  ");
+            }
+            //pattern 
+            for(int j = 1; j <= n -i +1; j++){
+                System.out.print("* ");
+            }
+
+            //Line break
+            System.out.println();
+        }
+    }
+}
+
+
+
+***************************************** C *******************************************
+#include <stdio.h>
+
+int main() {
+    int n = 10;
+
+    for(int i = 1; i <= n; i++) {
+
+        // space
+        for(int j = 1; j <= i - 1; j++) {
+            printf("  ");
+        }
+
+        // pattern
+        for(int j = 1; j <= n - i + 1; j++) {
+            printf("* ");
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 10;
+
+    for(int i = 1; i <= n; i++) {
+
+        // space
+        for(int j = 1; j <= i - 1; j++) {
+            cout << "  ";
+        }
+
+        // pattern
+        for(int j = 1; j <= n - i + 1; j++) {
+            cout << "* ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+***************************************** Python **************************************
+n = 10
+
+for i in range(1, n + 1):
+
+    # space
+    for j in range(1, i):
+        print("  ", end="")
+
+    # pattern
+    for j in range(1, n - i + 2):
+        print("* ", end="")
+
+    print()
