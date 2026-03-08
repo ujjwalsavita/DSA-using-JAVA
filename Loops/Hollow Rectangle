@@ -1,0 +1,84 @@
+***************************************** JAVA *****************************************
+public class pattern02 {
+    public static void main(String[] args) {
+        int n = 5;
+        int m = 7;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= m ;j++){
+                if(i == 1 || i == n || j == 1 || j == m){
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+***************************************** C *****************************************
+#include <stdio.h>
+
+int main() {
+    int n = 5;
+    int m = 7;
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= m; j++) {
+
+            if(i == 1 || i == n || j == 1 || j == m) {
+                printf("* ");
+            }
+            else {
+                printf("  ");
+            }
+
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+    int m = 7;
+
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= m; j++) {
+
+            if(i == 1 || i == n || j == 1 || j == m) {
+                cout << "* ";
+            }
+            else {
+                cout << "  ";
+            }
+
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+***************************************** Python *****************************************
+n = 5
+m = 7
+
+for i in range(1, n + 1):
+    for j in range(1, m + 1):
+
+        if i == 1 or i == n or j == 1 or j == m:
+            print("* ", end="")
+        else:
+            print("  ", end="")
+
+    print()
