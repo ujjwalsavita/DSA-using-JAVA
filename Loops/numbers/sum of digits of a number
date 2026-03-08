@@ -1,0 +1,73 @@
+***************************************** JAVA ****************************************
+public class SumOfDigits {
+    public static void main(String[] args) {
+        int n = 9911 ;
+        int sum = 0;
+
+        while (n > 0) {
+            int r = n % 10;
+            n = n / 10;
+
+            sum += r; 
+        }
+
+        System.out.println("Sum of the give number is "+sum);
+
+    }
+}
+
+
+***************************************** C *******************************************
+#include <stdio.h>
+
+int main() {
+
+    int n = 9911;
+    int sum = 0;
+
+    while(n > 0) {
+        int r = n % 10;
+        n = n / 10;
+
+        sum += r;
+    }
+
+    printf("Sum of the given number is %d", sum);
+
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n = 9911;
+    int sum = 0;
+
+    while(n > 0) {
+        int r = n % 10;
+        n = n / 10;
+
+        sum += r;
+    }
+
+    cout << "Sum of the given number is " << sum;
+
+    return 0;
+}
+
+
+***************************************** Python **************************************
+n = 9911
+sum = 0
+
+while n > 0:
+    r = n % 10
+    n = n // 10
+
+    sum += r
+
+print("Sum of the given number is", sum)

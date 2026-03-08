@@ -1,0 +1,83 @@
+***************************************** JAVA ****************************************
+public class ReverseOfNumber {
+    public static void main(String[] args) {
+        int n = 9911;
+
+        int result = 0;
+        System.out.println("Before Reversing number is "+ n);
+        while (n > 0) {
+            int r = n %10;
+             
+            result = result * 10 + r;
+
+            n /= 10;
+        }
+
+        System.out.println(("Revered Number is "+ result));
+    }
+}
+
+
+***************************************** C *******************************************
+#include <stdio.h>
+
+int main() {
+
+    int n = 9911;
+    int result = 0;
+
+    printf("Before Reversing number is %d\n", n);
+
+    while(n > 0) {
+        int r = n % 10;
+
+        result = result * 10 + r;
+
+        n /= 10;
+    }
+
+    printf("Reversed Number is %d", result);
+
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n = 9911;
+    int result = 0;
+
+    cout << "Before Reversing number is " << n << endl;
+
+    while(n > 0) {
+        int r = n % 10;
+
+        result = result * 10 + r;
+
+        n /= 10;
+    }
+
+    cout << "Reversed Number is " << result;
+
+    return 0;
+}
+
+
+***************************************** Python **************************************
+n = 9911
+result = 0
+
+print("Before Reversing number is", n)
+
+while n > 0:
+    r = n % 10
+
+    result = result * 10 + r
+
+    n //= 10
+
+print("Reversed Number is", result)
