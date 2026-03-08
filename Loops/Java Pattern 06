@@ -1,0 +1,269 @@
+***************************************** JAVA *****************************************
+public class pattern06 {
+    public static void main(String[] args) {
+        int n = 9;
+
+        for(int i = 0 ;i < n; i++){
+            for(int j= 0 ; j < n; j++){
+                //A
+                if(i < n/2){
+                    //a
+                    if(j < n/2){
+                        if(j == 0){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    //b
+                    else if(j == n/2){
+                        System.out.print("* ");
+                    }
+                    //c
+                    else{
+                        if(i == 0) {
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                }
+                //B
+                else if(i == n/2){
+                    System.out.print("* ");
+                }
+                //C
+                else{
+                    //a
+                    if(j < n/2){
+                        if(i == n-1){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    //b
+                    else if(j == n/2){
+                        System.out.print("* ");
+                    }
+                    //c
+                    else{
+                        if(j == n-1) {
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+
+
+***************************************** C *****************************************
+#include <stdio.h>
+
+int main() {
+    int n = 9;
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+
+            // A
+            if(i < n/2) {
+
+                // a
+                if(j < n/2) {
+                    if(j == 0) {
+                        printf("* ");
+                    }
+                    else {
+                        printf("  ");
+                    }
+                }
+
+                // b
+                else if(j == n/2) {
+                    printf("* ");
+                }
+
+                // c
+                else {
+                    if(i == 0) {
+                        printf("* ");
+                    }
+                    else {
+                        printf("  ");
+                    }
+                }
+
+            }
+
+            // B
+            else if(i == n/2) {
+                printf("* ");
+            }
+
+            // C
+            else {
+
+                // a
+                if(j < n/2) {
+                    if(i == n-1) {
+                        printf("* ");
+                    }
+                    else {
+                        printf("  ");
+                    }
+                }
+
+                // b
+                else if(j == n/2) {
+                    printf("* ");
+                }
+
+                // c
+                else {
+                    if(j == n-1) {
+                        printf("* ");
+                    }
+                    else {
+                        printf("  ");
+                    }
+                }
+
+            }
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 9;
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+
+            if(i < n/2) {
+
+                if(j < n/2) {
+                    if(j == 0) {
+                        cout << "* ";
+                    }
+                    else {
+                        cout << "  ";
+                    }
+                }
+
+                else if(j == n/2) {
+                    cout << "* ";
+                }
+
+                else {
+                    if(i == 0) {
+                        cout << "* ";
+                    }
+                    else {
+                        cout << "  ";
+                    }
+                }
+
+            }
+
+            else if(i == n/2) {
+                cout << "* ";
+            }
+
+            else {
+
+                if(j < n/2) {
+                    if(i == n-1) {
+                        cout << "* ";
+                    }
+                    else {
+                        cout << "  ";
+                    }
+                }
+
+                else if(j == n/2) {
+                    cout << "* ";
+                }
+
+                else {
+                    if(j == n-1) {
+                        cout << "* ";
+                    }
+                    else {
+                        cout << "  ";
+                    }
+                }
+
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+***************************************** Python *****************************************
+n = 9
+
+for i in range(n):
+    for j in range(n):
+
+        if i < n//2:
+
+            if j < n//2:
+                if j == 0:
+                    print("* ", end="")
+                else:
+                    print("  ", end="")
+
+            elif j == n//2:
+                print("* ", end="")
+
+            else:
+                if i == 0:
+                    print("* ", end="")
+                else:
+                    print("  ", end="")
+
+        elif i == n//2:
+            print("* ", end="")
+
+        else:
+
+            if j < n//2:
+                if i == n-1:
+                    print("* ", end="")
+                else:
+                    print("  ", end="")
+
+            elif j == n//2:
+                print("* ", end="")
+
+            else:
+                if j == n-1:
+                    print("* ", end="")
+                else:
+                    print("  ", end="")
+
+    print()
