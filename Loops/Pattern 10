@@ -1,0 +1,67 @@
+***************************************** JAVA ****************************************
+public class pattern10 {
+    public static void main(String[] args) {
+        int n = 5;
+        for(int i = 1; i<= n; i++){
+            for(int j = 1; j <= i ;j++){
+                int x = 'A' + j-1;
+                System.out.print((char)x +" ");
+            }
+
+            System.out.println();
+        }
+    }
+}
+
+
+
+***************************************** C *******************************************
+#include <stdio.h>
+
+int main() {
+    int n = 5;
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= i; j++) {
+            char x = 'A' + j - 1;
+            printf("%c ", x);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+
+***************************************** C++ *****************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 5;
+
+    for(int i = 1; i <= n; i++) {
+
+        for(int j = 1; j <= i; j++) {
+            char x = 'A' + j - 1;
+            cout << x << " ";
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
+
+
+
+***************************************** Python **************************************
+n = 5
+
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        x = chr(ord('A') + j - 1)
+        print(x, end=" ")
+    print()
